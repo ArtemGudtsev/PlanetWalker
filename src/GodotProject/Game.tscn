@@ -1,0 +1,213 @@
+[gd_scene load_steps=59 format=2]
+
+[ext_resource path="res://Game.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/StartingScene3D.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/GamingScene3D.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/ResultsScene2D.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/MenuScene2D.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Models/PlanetBombed1.png" type="Texture" id=6]
+[ext_resource path="res://Models/PlanetBombed1.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://LevelMeshLib_Source.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Models/CrateLevel4.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://Models/Surface5.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://Models/Surface7.obj" type="ArrayMesh" id=11]
+[ext_resource path="res://Models/Surface8.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://Models/Surface12.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://Models/Surface4.obj" type="ArrayMesh" id=14]
+[ext_resource path="res://Models/DefaultSurface.obj" type="ArrayMesh" id=15]
+[ext_resource path="res://Models/Surface6.obj" type="ArrayMesh" id=16]
+[ext_resource path="res://Models/Surface9.obj" type="ArrayMesh" id=17]
+[ext_resource path="res://Models/CrateLevel3.obj" type="ArrayMesh" id=18]
+[ext_resource path="res://Models/Surface1.obj" type="ArrayMesh" id=19]
+[ext_resource path="res://Models/Surface10.obj" type="ArrayMesh" id=20]
+[ext_resource path="res://Models/Surface11.obj" type="ArrayMesh" id=21]
+[ext_resource path="res://Models/Surface3.obj" type="ArrayMesh" id=22]
+[ext_resource path="res://Models/Surface6.png" type="Texture" id=23]
+[ext_resource path="res://Models/CrateLevel4.png" type="Texture" id=24]
+[ext_resource path="res://Models/CrateLevel3.png" type="Texture" id=25]
+[ext_resource path="res://Models/Surface1.png" type="Texture" id=26]
+[ext_resource path="res://Models/Surface8.png" type="Texture" id=27]
+[ext_resource path="res://Models/CrateLevel1.png" type="Texture" id=28]
+[ext_resource path="res://Models/Surface12.png" type="Texture" id=29]
+[ext_resource path="res://Models/CrateLevel2.png" type="Texture" id=30]
+[ext_resource path="res://Models/Surface7.png" type="Texture" id=31]
+[ext_resource path="res://Models/Surface10.png" type="Texture" id=32]
+[ext_resource path="res://Models/Surface5.png" type="Texture" id=33]
+[ext_resource path="res://Models/DefaultSurface.png" type="Texture" id=34]
+[ext_resource path="res://Models/Surface3.png" type="Texture" id=36]
+[ext_resource path="res://Models/Surface9.png" type="Texture" id=37]
+[ext_resource path="res://Models/Surface11.png" type="Texture" id=38]
+[ext_resource path="res://Models/Surface4.png" type="Texture" id=39]
+[ext_resource path="res://Models/CrateLevel2.obj" type="ArrayMesh" id=40]
+[ext_resource path="res://Models/CrateLevel1.obj" type="ArrayMesh" id=41]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 6 )
+
+[sub_resource type="Environment" id=6]
+background_mode = 1
+background_color = Color( 0.027451, 0.0470588, 0.215686, 1 )
+ambient_light_color = Color( 0.282353, 0.270588, 0.196078, 1 )
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_texture = ExtResource( 28 )
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_texture = ExtResource( 30 )
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_texture = ExtResource( 25 )
+
+[sub_resource type="SpatialMaterial" id=9]
+albedo_texture = ExtResource( 24 )
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_texture = ExtResource( 34 )
+
+[sub_resource type="SpatialMaterial" id=11]
+albedo_texture = ExtResource( 26 )
+
+[sub_resource type="SpatialMaterial" id=12]
+albedo_texture = ExtResource( 36 )
+
+[sub_resource type="SpatialMaterial" id=13]
+albedo_texture = ExtResource( 39 )
+
+[sub_resource type="SpatialMaterial" id=14]
+albedo_texture = ExtResource( 33 )
+
+[sub_resource type="SpatialMaterial" id=15]
+albedo_texture = ExtResource( 23 )
+
+[sub_resource type="SpatialMaterial" id=16]
+albedo_texture = ExtResource( 31 )
+
+[sub_resource type="SpatialMaterial" id=17]
+albedo_texture = ExtResource( 27 )
+
+[sub_resource type="SpatialMaterial" id=18]
+albedo_texture = ExtResource( 37 )
+
+[sub_resource type="SpatialMaterial" id=19]
+albedo_texture = ExtResource( 32 )
+
+[sub_resource type="SpatialMaterial" id=20]
+albedo_texture = ExtResource( 38 )
+
+[sub_resource type="SpatialMaterial" id=21]
+albedo_texture = ExtResource( 29 )
+
+[node name="Game" type="Node"]
+script = ExtResource( 1 )
+
+[node name="MenuScene2D" parent="." instance=ExtResource( 5 )]
+visible = false
+
+[node name="StartingScene3D" parent="." instance=ExtResource( 2 )]
+visible = false
+
+[node name="PlanetMesh" type="MeshInstance" parent="StartingScene3D"]
+transform = Transform( 0.939871, 0.0785585, 0.332371, -0.00799932, 0.977983, -0.208533, -0.341435, 0.193336, 0.919806, 0, 0, 0 )
+mesh = ExtResource( 7 )
+material/0 = SubResource( 1 )
+
+[node name="MainStar" type="DirectionalLight" parent="StartingScene3D"]
+transform = Transform( -0.391968, 0, 0.919979, 0, 1, 0, -0.919979, 0, -0.391968, 64.0293, 44.5462, 56.5603 )
+light_color = Color( 0.909804, 0.898039, 0.188235, 1 )
+light_energy = 2.13
+
+[node name="OrbitCamera" type="ClippedCamera" parent="StartingScene3D"]
+transform = Transform( 0.505266, 0, 0.862964, 0, 1, 0, -0.862964, 0, 0.505266, 39.7848, 13.7443, 20.6727 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="StartingScene3D"]
+environment = SubResource( 6 )
+
+[node name="GamingScene3D" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.936211, 0, -0.691578 )
+
+[node name="ResultsScene2D" parent="." instance=ExtResource( 4 )]
+visible = false
+
+[node name="LevelMeshLib_Source" parent="." instance=ExtResource( 8 )]
+
+[node name="CrateLevel1" type="MeshInstance" parent="LevelMeshLib_Source"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.0493, 0, -39.8207 )
+mesh = ExtResource( 41 )
+material/0 = SubResource( 5 )
+
+[node name="CrateLevel2" type="MeshInstance" parent="LevelMeshLib_Source"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.3394, 0, -22.9154 )
+mesh = ExtResource( 40 )
+material/0 = SubResource( 7 )
+
+[node name="CrateLevel3" type="MeshInstance" parent="LevelMeshLib_Source"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27.9655, 0, -6.87948 )
+mesh = ExtResource( 18 )
+material/0 = SubResource( 8 )
+
+[node name="CrateLevel4" type="MeshInstance" parent="LevelMeshLib_Source"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.6167, 0, 10.5062 )
+mesh = ExtResource( 9 )
+material/0 = SubResource( 9 )
+
+[node name="DefaultSurface" type="MeshInstance" parent="LevelMeshLib_Source"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.3389, 0, 27.2369 )
+mesh = ExtResource( 15 )
+material/0 = SubResource( 10 )
+
+[node name="Surface1" type="MeshInstance" parent="LevelMeshLib_Source"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18811, 0, -40.4758 )
+mesh = ExtResource( 19 )
+material/0 = SubResource( 11 )
+
+[node name="Surface2" type="MeshInstance" parent="LevelMeshLib_Source"]
+
+[node name="Surface3" type="MeshInstance" parent="LevelMeshLib_Source"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2146, 0, -22.6862 )
+mesh = ExtResource( 22 )
+material/0 = SubResource( 12 )
+
+[node name="Surface4" type="MeshInstance" parent="LevelMeshLib_Source"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.77348, 0, -5.64034 )
+mesh = ExtResource( 14 )
+material/0 = SubResource( 13 )
+
+[node name="Surface5" type="MeshInstance" parent="LevelMeshLib_Source"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.72104, 0, 10.4169 )
+mesh = ExtResource( 10 )
+material/0 = SubResource( 14 )
+
+[node name="Surface6" type="MeshInstance" parent="LevelMeshLib_Source"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.42876, 0, 27.1619 )
+mesh = ExtResource( 16 )
+material/0 = SubResource( 15 )
+
+[node name="Surface7" type="MeshInstance" parent="LevelMeshLib_Source"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4519, 0, -40.2514 )
+mesh = ExtResource( 11 )
+material/0 = SubResource( 16 )
+
+[node name="Surface8" type="MeshInstance" parent="LevelMeshLib_Source"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.21298, 0, -23.4986 )
+mesh = ExtResource( 12 )
+material/0 = SubResource( 17 )
+
+[node name="Surface9" type="MeshInstance" parent="LevelMeshLib_Source"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.33556, 0, -5.85526 )
+mesh = ExtResource( 17 )
+material/0 = SubResource( 18 )
+
+[node name="Surface10" type="MeshInstance" parent="LevelMeshLib_Source"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.02657, 0, 10.3581 )
+mesh = ExtResource( 20 )
+material/0 = SubResource( 19 )
+
+[node name="Surface11" type="MeshInstance" parent="LevelMeshLib_Source"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.38734, 0, 26.9237 )
+mesh = ExtResource( 21 )
+material/0 = SubResource( 20 )
+
+[node name="Surface12" type="MeshInstance" parent="LevelMeshLib_Source"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28.4279, 0, -39.5549 )
+mesh = ExtResource( 13 )
+material/0 = SubResource( 21 )

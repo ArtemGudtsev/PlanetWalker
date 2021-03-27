@@ -1,0 +1,41 @@
+**************************************************************************************************************************************************************************
+Requirements
+**************************************************************************************************************************************************************************
+
+Game map is small area of alien planet surface. 
+Create simple game where player as operator of robot should find and mark 
+	by radio beacon as much as possible proxinium pieces within 1 minute.
+Map and pieces should be procedurally generated.
+4 static cameras - player should switch them and move robot.
+Static cameras landed separately from robot and restrict area of search.
+Condition: surface has high raddiation - 1 minute is a maximum lifecycle of each camera and robot here.
+Animation: sphere as planet, 5 small dots landing, text with explanation, then switch to game scene - 4 cameras and robots.
+Proxinium: new unique material.
+
+**************************************************************************************************************************************************************************
+Color palettes in MagicaVoxel
+**************************************************************************************************************************************************************************
+
+Palette = 1
+Default surface = 
+Surface mark 1 = 
+Surface mark 2 = 
+Surface mark 3 = 
+Surface mark 4 = 
+Proxinium = 
+
+
+
+**************************************************************************************************************************************************************************
+Voxel cubes
+**************************************************************************************************************************************************************************
+
+Default size = cube x 120 voxels
+Landscape y delta = 40 voxels (required for hills and holes)
+Size of crates by level:
+CrateLevel1 = 12 voxels
+
+
+**************************************************************************************************************************************************************************
+Landscape
+**************************************************************************************************************************************************************************

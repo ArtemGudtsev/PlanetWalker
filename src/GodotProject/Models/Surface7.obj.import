@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Surface7.obj-c16d965542c9d65137184423c985635c.mesh"
+
+[deps]
+
+files=[ "res://.import/Surface7.obj-c16d965542c9d65137184423c985635c.mesh" ]
+
+source_file="res://Models/Surface7.obj"
+dest_files=[ "res://.import/Surface7.obj-c16d965542c9d65137184423c985635c.mesh", "res://.import/Surface7.obj-c16d965542c9d65137184423c985635c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
