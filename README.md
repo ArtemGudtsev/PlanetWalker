@@ -1,6 +1,9 @@
 # PlanetWalker
 Simple game to learn Godot engine and simple 3d modeling along with producing synth soundtrack for games. Gamer will control rover to find crystals on planet surface.
 
+## Why voxel art?
+
+
 ## Toolset
 https://www.voxelmade.com/magicavoxel/ - opens ource very useful tool to create voxel models.
 
