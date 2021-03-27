@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/StrightWall.obj-06d5f718da720469c4603d83d23c167a.mesh"
+
+[deps]
+
+files=[ "res://.import/StrightWall.obj-06d5f718da720469c4603d83d23c167a.mesh" ]
+
+source_file="res://Models/StrightWall.obj"
+dest_files=[ "res://.import/StrightWall.obj-06d5f718da720469c4603d83d23c167a.mesh", "res://.import/StrightWall.obj-06d5f718da720469c4603d83d23c167a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
