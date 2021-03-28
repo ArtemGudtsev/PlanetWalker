@@ -9,7 +9,7 @@ https://www.voxelmade.com/magicavoxel/ - opens ource very useful tool to create 
 
 https://godotengine.org/ - open source powerful and flexible game engine.
 
-https://www.blender.org/ - open source 3d creatios suite.
+https://www.blender.org/ - open source 3d creations suite.
 
 https://www.reaper.fm/ - DAW used for soundtrack, paid license is required.
 
