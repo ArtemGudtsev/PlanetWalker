@@ -14,6 +14,13 @@ To use prepared set of meshes you need to add GridMap to your scene and choose M
 
 Use WASD keys to rotate tiles while adding them from MeshLibrary to scene.
 
+## Preparation of 3D models
+Working with models including 3 steps:
+1. Create voxel art model in MagicaVoxel editor.
+2. Export voxel art model to waveform format (obj file with png as texture palette).
+3. Import waveform file to Blender, save blender project, geometry gets optimized here.
+4. Export blender model to waveform file, save it to models folder of godot project. 3D model is ready to use.
+
 ## Toolset
 https://www.voxelmade.com/magicavoxel/ - opens ource very useful tool to create voxel models.
 
