@@ -12,6 +12,8 @@ Mesh libraries is core technique in this game which make possible to quickly and
 
 To use prepared set of meshes you need to add GridMap to your scene and choose MeshLibrary for it (also work to drag meshlib file from FileSystem tab to MeshLibrary property of GridMap object).
 
+Use WASD keys to rotate tiles while adding them from MeshLibrary to scene.
+
 ## Toolset
 https://www.voxelmade.com/magicavoxel/ - opens ource very useful tool to create voxel models.
 
