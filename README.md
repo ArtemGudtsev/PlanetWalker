@@ -4,6 +4,15 @@ Simple game to learn Godot engine and 3d modeling techniques along with producin
 ## Why voxel art?
 Easy to create, fun to work and beatiful to look. But for me personally voxel art is a way to transform pixel art experience from 90-s to modern 3D world.
 
+## Game concept - levels
+Planet Walker game consists of multiple levels which could be classified into few types based on location:
+1. GeneralLevel - surface of planet where rover is landed, this is most typical surface, covered around 85% of planet.
+2. CaveLevel - surface of caves in the planet.
+3. IceLevel - surface of planet polar zones covered by ice.
+
+## Game concept - gameplay
+User drives rover on planet via remote control from orbital station, finds new paths and important artefacts and objects. Additionally he should take care about radio signal in specific areas of surface and in caves. He can place radio-tranmsitters to strenghten signal.
+
 ## Mesh libraries in Godot
 Mesh libraries is core technique in this game which make possible to quickly and easily generate levels from prepared set of meshes. Usage of MeshLibrary object in Godot is not really trivial but is not rocket science same time. You need to keep in mind 3 important points:
 1. To export scene as mesh library you should create new scene from nowhere (Scene->New Scene), such scene must not have any root scene or root nodes. Although it is ok to save such scene to separate tscn file.
