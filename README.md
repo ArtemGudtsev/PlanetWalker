@@ -6,9 +6,9 @@ Easy to create, fun to work and beatiful to look. But for me personally voxel ar
 
 ## Game concept - levels
 Planet Walker game consists of multiple levels which could be classified into few types based on location:
-1. GeneralLevel - surface of planet where rover is landed, this is most typical surface, covered around 85% of planet.
-2. CaveLevel - surface of caves in the planet.
-3. IceLevel - surface of planet polar zones covered by ice.
+1. GeneralLevel - surface of planet where rover is landed, this is most typical surface, covered around 85% of planet. Star light available.
+2. CaveLevel - surface of caves in the planet. Only rover light is available.
+3. IceLevel - surface of planet polar zones covered by ice. Medium level of starlight is available, sometimes rover light is required.
 
 ## Game concept - gameplay
 User drives rover on planet via remote control from orbital station, finds new paths and important artefacts and objects. Additionally he should take care about radio signal in specific areas of surface and in caves. He can place radio-tranmsitters to strenghten signal.
