@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/HighSurface13.obj-d32c519f3af62cad7fe8d78f37245f90.mesh"
+
+[deps]
+
+files=[ "res://.import/HighSurface13.obj-d32c519f3af62cad7fe8d78f37245f90.mesh" ]
+
+source_file="res://Models/LevelModels/HighSurface13.obj"
+dest_files=[ "res://.import/HighSurface13.obj-d32c519f3af62cad7fe8d78f37245f90.mesh", "res://.import/HighSurface13.obj-d32c519f3af62cad7fe8d78f37245f90.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

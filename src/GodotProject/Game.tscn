@@ -1,19 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Game.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/StartingScene3D.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/ResultsScene2D.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/MenuScene2D.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Models/PlanetBombed1.png" type="Texture" id=6]
-[ext_resource path="res://Models/PlanetBombed1.obj" type="ArrayMesh" id=7]
-
-[sub_resource type="SpatialMaterial" id=1]
-albedo_texture = ExtResource( 6 )
-
-[sub_resource type="Environment" id=2]
-background_mode = 1
-background_color = Color( 0.027451, 0.0470588, 0.215686, 1 )
-ambient_light_color = Color( 0.282353, 0.270588, 0.196078, 1 )
 
 [node name="Game" type="Node"]
 script = ExtResource( 1 )
@@ -21,39 +11,15 @@ script = ExtResource( 1 )
 [node name="MenuScene2D" parent="." instance=ExtResource( 5 )]
 visible = false
 
+[node name="HUD" type="Control" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="StartingScene3D" parent="." instance=ExtResource( 2 )]
-visible = false
-
-[node name="PlanetMesh" type="MeshInstance" parent="StartingScene3D"]
-transform = Transform( 0.939871, 0.0785585, 0.332371, -0.00799932, 0.977983, -0.208533, -0.341435, 0.193336, 0.919806, 0, 0, 0 )
-mesh = ExtResource( 7 )
-material/0 = SubResource( 1 )
-
-[node name="MainStar" type="DirectionalLight" parent="StartingScene3D"]
-transform = Transform( -0.391968, 0, 0.919979, 0, 1, 0, -0.919979, 0, -0.391968, 64.0293, 44.5462, 56.5603 )
-light_color = Color( 0.909804, 0.898039, 0.188235, 1 )
-light_energy = 2.13
-
-[node name="OrbitCamera" type="ClippedCamera" parent="StartingScene3D"]
-transform = Transform( 0.505266, 0, 0.862964, 0, 1, 0, -0.862964, 0, 0.505266, 39.7848, 13.7443, 20.6727 )
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="StartingScene3D"]
-environment = SubResource( 2 )
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="StartingScene3D"]
-
-[node name="Level1" type="Spatial" parent="."]
-
-[node name="DirectionalLight" type="DirectionalLight" parent="Level1"]
-transform = Transform( 0.0292704, -0.980955, 0.192016, 0.987773, 0.0578144, 0.144784, -0.153128, 0.18543, 0.970653, 54.1797, 56.5791, 59.5508 )
-
-[node name="Level2" type="Spatial" parent="."]
-visible = false
-
-[node name="Level3" type="Spatial" parent="."]
-visible = false
-
-[node name="LevelX" type="Spatial" parent="."]
 visible = false
 
 [node name="ResultsScene2D" parent="." instance=ExtResource( 4 )]

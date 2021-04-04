@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Robot1.obj-84105d7e2174b4a1622ca517a2678c44.mesh"
+
+[deps]
+
+files=[ "res://.import/Robot1.obj-84105d7e2174b4a1622ca517a2678c44.mesh" ]
+
+source_file="res://Models/Rover/Robot1.obj"
+dest_files=[ "res://.import/Robot1.obj-84105d7e2174b4a1622ca517a2678c44.mesh", "res://.import/Robot1.obj-84105d7e2174b4a1622ca517a2678c44.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
