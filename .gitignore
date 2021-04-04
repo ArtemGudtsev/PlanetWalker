@@ -35,3 +35,5 @@ dkms.conf
 
 # Godot temp files
 src/GodotProject/.import
+.import
+*.import
