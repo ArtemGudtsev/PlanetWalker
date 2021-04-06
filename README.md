@@ -40,3 +40,5 @@ https://www.blender.org/ - open source 3d creations suite.
 https://www.reaper.fm/ - DAW used for soundtrack, paid license is required.
 
 https://www.rolandcloud.com/ - useful set of virtual instruments to work on soundtrack, paid subscription is required.
+
+https://www.pixilart.com/ - pixel-art community and drawing tool.
