@@ -5,10 +5,7 @@ Simple game to learn Godot engine and 3d modeling techniques along with producin
 Easy to create, fun to work and beatiful to look. But for me personally voxel art is a way to transform pixel art experience from 90-s to modern 3D world.
 
 ## Game concept - levels
-Planet Walker game consists of multiple levels which could be classified into few types based on location:
-1. GeneralLevel - surface of planet where rover is landed, this is most typical surface, covered around 85% of planet. Star light available.
-2. CaveLevel - surface of caves in the planet. Only rover light is available.
-3. IceLevel - surface of planet polar zones covered by ice. Medium level of starlight is available, sometimes rover light is required.
+Planet Walker game consists of multiple levels which a quadrants connected to each other via entrance systems or not. Should be possible to quickly define new maps as matrix with octet types and connect to each other.
 
 ## Game concept - gameplay
 User drives rover on planet via remote control from orbital station, finds new paths and important artefacts and objects. 
