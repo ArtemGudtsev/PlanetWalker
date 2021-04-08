@@ -11,7 +11,12 @@ Planet Walker game consists of multiple levels which could be classified into fe
 3. IceLevel - surface of planet polar zones covered by ice. Medium level of starlight is available, sometimes rover light is required.
 
 ## Game concept - gameplay
-User drives rover on planet via remote control from orbital station, finds new paths and important artefacts and objects. Additionally he should take care about radio signal in specific areas of surface and in caves. He can place radio-tranmsitters to strenghten signal.
+User drives rover on planet via remote control from orbital station, finds new paths and important artefacts and objects. 
+
+Point of interests for player:
+1. Usage of radio tranceiver for rover control - select satellite placed at orbit around planet, select frequency, enter pin code, list with error codes received from rover, specific command to rover (sleep, reboot to reset errors, activate, ping etc).
+2. Charge level of batteries - low usage in sleep mode, while radio, electro engines, camera and light require much more energy. Search for landed charging stations.
+3. Coordinates usage - rover can define location where it placed if at least 3 connection satellites available on orbit and rover has connection with them.
 
 ## Mesh libraries in Godot
 Mesh libraries is core technique in this game which make possible to quickly and easily generate levels from prepared set of meshes. Usage of MeshLibrary object in Godot is not really trivial but is not rocket science same time. You need to keep in mind 3 important points:
