@@ -34,7 +34,9 @@ Working with models including 3 steps:
 
 ## Sound - sound effects
 Slides/Trans - Roland Cloud/Zenology/SDZ020 Trans & Risers
+
 Noise - TBA
+
 Movements - TBA
 
 ## Toolset
