@@ -32,6 +32,9 @@ Working with models including 3 steps:
 3. Import wavefront file to Blender, save blender project, geometry gets optimized here.
 4. Export blender model to wavefront file, save it to models folder of godot project. 3D model is ready to use.
 
+## Sound - sound effects
+TBA
+
 ## Toolset
 https://www.voxelmade.com/magicavoxel/ - opens ource very useful tool to create voxel models.
 
