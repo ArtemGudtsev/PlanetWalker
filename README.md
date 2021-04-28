@@ -15,6 +15,9 @@ Point of interests for player:
 2. Charge level of batteries - low usage in sleep mode, while radio, electro engines, camera and light require much more energy. Search for landed charging stations.
 3. Coordinates usage - rover can define location where it placed if at least 3 connection satellites available on orbit and rover has connection with them.
 
+## Game concept - plot
+TBA
+
 ## Mesh libraries in Godot
 Mesh libraries is core technique in this game which make possible to quickly and easily generate levels from prepared set of meshes. Usage of MeshLibrary object in Godot is not really trivial but is not rocket science same time. You need to keep in mind 3 important points:
 1. To export scene as mesh library you should create new scene from nowhere (Scene->New Scene), such scene must not have any root scene or root nodes. Although it is ok to save such scene to separate tscn file.
