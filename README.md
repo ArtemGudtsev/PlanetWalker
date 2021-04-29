@@ -11,9 +11,9 @@ Planet Walker game consists of multiple levels which a quadrants connected to ea
 User drives rover on planet via remote control from orbital station, finds new paths and important artefacts and objects. 
 
 Point of interests for player:
-1. Usage of radio tranceiver for rover control - select satellite placed at orbit around planet, select frequency, enter pin code, list with error codes received from rover, specific command to rover (sleep, reboot to reset errors, activate, ping etc).
+1. Full story about rover usage in foreign planet.
 2. Charge level of batteries - low usage in sleep mode, while radio, electro engines, camera and light require much more energy. Search for landed charging stations.
-3. Coordinates usage - rover can define location where it placed if at least 3 connection satellites available on orbit and rover has connection with them.
+3. Narrows to control rover.
 
 ## Game concept - plot
 TBA
